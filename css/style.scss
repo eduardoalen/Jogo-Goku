@@ -1,10 +1,17 @@
 @import 'padrao-cores';
 @import 'animacoes';
 
+// Importação de Fonte
+@font-face {
+    font-family: 'DBZ';
+    src: url('../fontes/Saiyan-Sans.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Kode Mono", monospace;
 }
 
 .cenario {
@@ -17,11 +24,59 @@
     border-bottom: 16px solid green;
 }
 
+// Topo - Placar
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-topo {
+    width: 750px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border: 4px solid $corAzul;
+    box-shadow: 3px 3px $corLaranja, 1px 0 0.4em rgb(6, 6, 6);
+    opacity: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    position: relative;
+}
+
+.coluna {
+    display: block;
+    text-align: center;
+}
+
+.titulo {
+    display: block;
+    font-size: 18px;
+    
+    color: $corAzul;
+}
+
+.img-logo {
+    width: 250px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    margin: 0 auto;
+}
+
+.placar {
+    display: flex;
+    gap: 10px;
+}
+
+
 .img-goku {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 20%;
+    width: 150px;
 }
 
 .img-nuvens {
@@ -51,4 +106,23 @@
     position: absolute;
     top: 200px;
     left: 300px;
+}
+
+
+// Estilo global
+
+.azul-ceu {
+    color: $corAzulCeu;
+}
+
+.laranja {
+    color: $corLaranja;    
+}
+
+.azul {
+    color: $corAzul;
+}
+
+.vermelho {
+    color: $corVermelha;
 }
