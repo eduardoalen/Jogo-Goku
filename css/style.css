@@ -1,3 +1,43 @@
+@keyframes move-nuvens {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 100%;
+  }
+}
+@keyframes move-injecao {
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
+@keyframes move-poder {
+  from {
+    right: -130px;
+  }
+  to {
+    right: 100%;
+  }
+}
+@keyframes move-comida {
+  from {
+    right: -50px;
+  }
+  to {
+    right: 100%;
+  }
+}
+@keyframes move-esfera {
+  from {
+    right: -60px;
+  }
+  to {
+    right: 100%;
+  }
+}
 @font-face {
   font-family: "DBZ";
   src: url("../fontes/Saiyan-Sans.ttf");
@@ -12,6 +52,7 @@
 .cenario {
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
   width: 100%;
   height: 100vh;
   background: linear-gradient(#1998D9, white);
@@ -71,32 +112,59 @@
 }
 
 .img-nuvens {
+  width: 300px;
+  position: absolute;
+  top: 100px;
+  right: -500px;
+  animation: move-nuvens 20s infinite linear;
+}
+
+.img-nuvens2 {
+  width: 300px;
   position: absolute;
   top: 200px;
+  right: -500px;
+  animation: move-nuvens 20s infinite linear 5s;
 }
 
 .img-injecao {
   position: absolute;
   bottom: 0;
-  left: 220px;
+  right: -80px;
+  animation: move-injecao 3s infinite linear;
 }
 
 .img-poder {
   position: absolute;
   bottom: 100px;
-  left: 520px;
+  right: -130px;
+  animation: move-poder 3s infinite linear 1.5s;
 }
 
 .img-ramen {
   position: absolute;
   bottom: 170px;
-  left: 220px;
+  right: -50px;
+  animation: move-comida 2.5s infinite linear;
+}
+
+.img-ramen2 {
+  animation: move-comida 2.5s infinite linear 0.5s;
+}
+
+.img-ramen2 {
+  animation: move-comida 2.5s infinite linear 1s;
 }
 
 .img-esfera {
   position: absolute;
   top: 200px;
-  left: 300px;
+  right: -60px;
+  animation: move-esfera 2.5s infinite linear;
+}
+
+.img-esfera2 {
+  animation: move-esfera 2s infinite linear 1.5s;
 }
 
 .azul-ceu {

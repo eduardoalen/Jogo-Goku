@@ -1,0 +1,44 @@
+@keyframes move-nuvens {
+    from {
+        right: -300px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes move-injecao {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes move-poder {
+    from {
+        right: -130px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes move-comida {
+    from {
+        right: -50px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes move-esfera {
+    from {
+        right: -60px;
+    }
+    to {
+        right: 100%;
+    }
+}
